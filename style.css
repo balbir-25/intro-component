@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins";
+  min-height: 100vh;
+  justify-content: center;
+  background-image: url(./images/bg-intro-desktop.png);
+  align-items: center;
+  background-color: hsl(0, 100%, 74%);
+  min-width: 1440px;
+}
+
+/* =====================================START MAIN AREA=========================== */
+.site {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  padding:  0px 30px;
+}
+
+/* ===================================START INTRO SECTION AREA=========================== */
+.intro {
+  margin-top: 300px;
+  width: 500px;
+  margin-right:50px;
+}
+
+.intro-h1 {
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  color: white;
+  text-align: start;
+}
+
+.intro-para {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: white;
+  margin-top: 30px;
+  text-align: start;
+}
+
+/* ===================================END INTRO SECTION AREA=========================== */
+/* ===================================START INFO SECTION AREA=========================== */
+
+.info-para {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  margin-top: 30px;
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px hsla(249, 10%, 26%, 0.39);
+}
+
+br{
+    display: none;
+}
+
+.info-para span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.info-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px 10px 0px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 10px hsla(120, 3%, 38%, 0.621);
+}
+
+.form-input {
+  width: 90%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid hsl(246, 25%, 77%);
+  margin-top: 30px;
+  font-size: 1.250rem;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.form-input:focus{
+    border: none;
+    outline: 2px solid hsl(248,32%,49%);
+}
+
+.icon {
+  display: none;
+  margin-left: 470px;
+  margin-top: -37px;
+  
+}
+
+.input-para {
+  text-align: end;
+  padding-right: 30px;
+  padding-top:25px;
+  color: hsl(0, 100%, 74%);
+  display: none ;
+}
+
+.btn {
+  margin: 0px 10px;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-size: 1.125em;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  box-shadow: 0px 10px hsla(154, 46%, 47%, 0.621);
+}
+
+.btn:hover{
+    background-color: rgba(56, 204, 140, 0.661);
+}
+
+.form-para {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: hsl(246, 25%, 77%);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.form-para span {
+  color: hsl(0, 100%, 74%);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+/* ===================================END INFO SECTION AREA=========================== */
+/* ================================END MAIN AREA====================================== */
+/* ================================START FOOTER AREA====================================== */
+.foot {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 20px;
+  color: hsl(0, 100%, 67%);
+  background-color: black;
+  margin-top: 50px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: hsl(39, 100%, 56%);
+}
+
+/* ================================END FOOTER AREA====================================== */
+
+
+/* ================================START MEDIA QUERRY======================================= */
+
+    @media screen and (max-width: 768px) {
+
+        body{
+            min-width:768px;
+            background-image: url(./images/bg-intro-mobile.png);
+        }
+
+        .site{
+            flex-direction: column;
+            padding: 0px 30px;
+            width: 100%;
+        }
+
+        .intro{
+            margin-top: 0px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .intro-h1, .intro-para{
+            text-align: center;
+        }
+
+        br{
+            display: block;
+        }
+
+    }
+
+/* ================================END MEDIA QUERRY======================================= */

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <!-- ================================START MAIN AREA==================================== -->
+
+    <main class="site">
+      <!-- ==============================START INTO SECTION AREA============================= -->
+      <section class="intro">
+        <h1 class="intro-h1">Learn to code by <br> watching others</h1>
+        <p class="intro-para">
+          See how experienced developers solve<br> problems in real-time. Watching<br>
+          scripted tutorials is great, but<br> understanding how developers think is<br>
+          invaluable.
+        </p>
+      </section>
+      <!-- ==============================END INTO SECTION AREA============================= -->
+
+      <!-- =============================START INFO SECTION AREA============================== -->
+      <section class="info">
+        <p class="info-para"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <form action="#" class="info-form">
+          <div class="form-div">
+            <input type="text" class="form-input" placeholder="First Name" id="first" name="first-name" />
+            <img src="./images/icon-error.svg" alt="icon" class="icon">
+            <p class="input-para">First Name cannot be empty</p>
+          </div>
+
+          <div class="form-div">
+            <input type="text" class="form-input" placeholder="Last Name" id="last" name="last-name" />
+            <img src="./images/icon-error.svg" alt="icon" class="icon">
+            <p class="input-para">Last Name cannot be empty</p>
+          </div>
+
+          <div class="form-div">
+            <input
+              type="email"
+              class="form-input"
+              id="mail"
+              placeholder=" Email Address"
+              name="email"
+            />
+            <img src="./images/icon-error.svg" alt="icon" class="icon">
+            <p class="input-para">Looks like this is not an email</p>
+          </div>
+
+          <div class="form-div">
+            <input type="password" class="form-input" id="pass" placeholder="Password" name="password" />
+            <img src="./images/icon-error.svg" alt="icon" class="icon">
+            <p class="input-para">Password cannot be empty</p>
+          </div>
+
+          <button class="btn" type="submit">Claim your free trial</button>
+          <p class="form-para">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </section>
+      <!-- =============================END INFO SECTION AREA============================== -->
+    </main>
+    <!-- ================================END MAIN AREA==================================== -->
+
+    <!-- ===============================START FOOTER AREA================================= -->
+    <footer class="foot">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="http://balbir-portfolio.liveblog365.com/" target="_blank"
+        >Balbir Singh</a
+      >.
+    </footer>
+    <!-- ===============================END FOOTER AREA================================= -->
+
+    <script src="./index.js"></script>
+
+  </body>
+</html>
